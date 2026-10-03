@@ -1,0 +1,23 @@
+# Old portfolio folders
+portfolio/
+sharmila-portfolio/
+portfolio
+sharmila-portfolio
+
+# Old files
+raw.html
+portfolio-deploy.zip
+Gandhi_Jayanti_Premium_Poster.jpg
+social_media_life_abroad.jpg
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Archives
+*.zip
