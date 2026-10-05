@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharmila | UI/UX Designer Portfolio</title>
-    <meta name="description" content="Creative UI/UX Designer based in Bangalore. Specializing in user-centered mobile apps, websites & digital products.">
+    <title>Sharmila P — UI/UX Designer Portfolio</title>
+    <meta name="description" content="Portfolio of Sharmila P — Creative and detail-oriented UI/UX Designer based in Bangalore. Specializing in mobile apps, web design, interactive prototypes, and AI-driven workflows.">
+    <meta name="keywords" content="UI/UX Designer, Sharmila, Bangalore, Figma, Mobile Design, Web Design, Prototype, Antigravity, Bold AI">
+    <meta name="author" content="Sharmila P">
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sharmila P — UI/UX Designer Portfolio">
+    <meta property="og:description" content="Creative UI/UX Designer crafting user-centered mobile apps, web experiences & interactive prototypes from Bangalore, India.">
+    <meta property="og:image" content="images/sharmila-cutout.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
 
-    <!-- ==================== LOADER ==================== -->
+    <!-- ==================== PAGE PRELOADER ==================== -->
     <div id="loader">
         <div class="loader-content">
-            <div class="loader-logo">S</div>
-            <div class="loader-bar"><div class="loader-progress"></div></div>
-            <p class="loader-text">Loading Portfolio...</p>
+            <div class="loader-ring-wrapper">
+                <div class="loader-ring"></div>
+                <div class="loader-logo">SP</div>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Loading Sharmila's Portfolio</p>
+            <span class="loader-subtext">Bangalore • UI/UX Designer</span>
         </div>
     </div>
 
@@ -29,186 +49,307 @@
     <!-- ==================== NAVIGATION ==================== -->
     <nav id="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>Sharmila<span class="logo-bracket">/&gt;</span>
+            <a href="#hero" class="nav-logo" aria-label="Sharmila P Portfolio">
+                <span class="logo-badge">SP</span>
+                <span class="logo-name">Sharmila<span class="logo-dot">.design</span></span>
             </a>
+
             <ul class="nav-links">
                 <li><a href="#hero" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+                <li><a href="#certifications" class="nav-link">Credentials</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <a href="#contact" class="nav-cta">Let's Talk</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
+
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode" title="Switch Theme">
+                    <i class="fas fa-moon moon-icon"></i>
+                    <i class="fas fa-sun sun-icon"></i>
+                </button>
+
+                <a href="#contact" class="nav-cta">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
     <!-- ==================== MOBILE MENU ==================== -->
     <div class="mobile-menu" id="mobileMenu">
-        <ul class="mobile-links">
-            <li><a href="#hero" class="mobile-link">Home</a></li>
-            <li><a href="#about" class="mobile-link">About</a></li>
-            <li><a href="#skills" class="mobile-link">Skills</a></li>
-            <li><a href="#projects" class="mobile-link">Projects</a></li>
-            <li><a href="#certifications" class="mobile-link">Certifications</a></li>
-            <li><a href="#contact" class="mobile-link">Contact</a></li>
-        </ul>
+        <div class="mobile-menu-inner">
+            <ul class="mobile-links">
+                <li><a href="#hero" class="mobile-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="mobile-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="mobile-link"><i class="fas fa-layer-group"></i> Skills</a></li>
+                <li><a href="#projects" class="mobile-link"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#ai-tools" class="mobile-link"><i class="fas fa-robot"></i> AI Tools</a></li>
+                <li><a href="#certifications" class="mobile-link"><i class="fas fa-award"></i> Certifications</a></li>
+                <li><a href="#contact" class="mobile-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="mailto:sharmi936342@gmail.com" class="mobile-email">
+                    <i class="fas fa-paper-plane"></i> sharmi936342@gmail.com
+                </a>
+                <div class="mobile-socials">
+                    <a href="https://www.linkedin.com/in/sharmila-p-76616a293/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.behance.net/sharmisharmila5" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://github.com/lillycrm601-droid/Sharmila-portfolio" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- ==================== HERO SECTION ==================== -->
     <section id="hero">
         <canvas id="particleCanvas"></canvas>
-        <div class="hero-container">
+        <div class="hero-ambient-glow glow-1"></div>
+        <div class="hero-ambient-glow glow-2"></div>
+        <div class="hero-ambient-glow glow-3"></div>
+
+        <div class="container hero-container">
             <div class="hero-content">
-                <div class="hero-badge animate-on-scroll">
-                    <span class="badge-dot"></span>
-                    Available for Freelance Work
+                <div class="hero-status-badge animate-on-scroll">
+                    <span class="status-pulse"></span>
+                    <span>Available for UI/UX & Product Design Roles</span>
+                    <span class="badge-location">• Bangalore, IN</span>
                 </div>
+
                 <h1 class="hero-title animate-on-scroll">
-                    Hi, I'm <span class="gradient-text">Sharmila</span>
+                    Designing <span class="gradient-text">Human-Centered</span> Digital Experiences
                 </h1>
-                <div class="hero-role animate-on-scroll">
-                    <span class="role-prefix">I'm a</span>
-                    <span class="typed-text" id="typedText"></span>
-                    <span class="typed-cursor">|</span>
+
+                <div class="hero-role-wrapper animate-on-scroll">
+                    <span class="role-intro">I'm Sharmila P —</span>
+                    <div class="role-typing-box">
+                        <span class="typed-text" id="typedText"></span>
+                        <span class="typed-cursor">|</span>
+                    </div>
                 </div>
+
                 <p class="hero-description animate-on-scroll">
-                    Creative & detail-oriented UI/UX Designer crafting beautiful, 
-                    user-centered digital experiences from Bangalore, India.
+                    Creative and detail-oriented <strong>UI/UX Designer</strong> with hands-on experience designing user-centered 
+                    mobile applications, websites, and digital products. Certified in UI/UX Design, combining empathetic research 
+                    with pixel-perfect visual craft and modern AI-augmented workflows.
                 </p>
+
+                <div class="hero-pills animate-on-scroll">
+                    <span class="pill-item"><i class="fas fa-check-circle"></i> Certified UI/UX</span>
+                    <span class="pill-item"><i class="fab fa-figma"></i> Figma Specialist</span>
+                    <span class="pill-item"><i class="fas fa-sitemap"></i> User Flows & Wireframes</span>
+                    <span class="pill-item"><i class="fas fa-sparkles"></i> AI Design Tools</span>
+                </div>
+
                 <div class="hero-buttons animate-on-scroll">
                     <a href="#projects" class="btn btn-primary">
-                        <span>View My Work</span>
-                        <i class="fas fa-arrow-right"></i>
+                        <span>Explore Featured Work</span>
+                        <i class="fas fa-arrow-down"></i>
                     </a>
                     <a href="#contact" class="btn btn-secondary">
-                        <span>Get In Touch</span>
+                        <span>Get in Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sharmila-p-76616a293/" target="_blank" class="btn btn-ghost" title="Connect on LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
                     </a>
                 </div>
+
+                <!-- Stats Counter -->
                 <div class="hero-stats animate-on-scroll">
-                    <div class="stat">
-                        <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">Projects</span>
+                    <div class="stat-card">
+                        <div class="stat-num-box">
+                            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">Featured Projects</span>
                     </div>
                     <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                    <div class="stat-card">
+                        <div class="stat-num-box">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-plus">x</span>
+                        </div>
                         <span class="stat-label">Certifications</span>
                     </div>
                     <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
-                        <span class="stat-label">AI Tools</span>
+                    <div class="stat-card">
+                        <div class="stat-num-box">
+                            <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+                        </div>
+                        <span class="stat-label">AI Design Tools</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-card">
+                        <div class="stat-num-box">
+                            <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                        </div>
+                        <span class="stat-label">User-Centered Focus</span>
                     </div>
                 </div>
             </div>
+
+            <!-- Sharmila's Hero Portrait Visual -->
             <div class="hero-visual animate-on-scroll">
-                <div class="profile-wrapper">
-                    <div class="profile-ring"></div>
-                    <div class="profile-ring ring-2"></div>
-                    <div class="profile-image">
-                        <img src="images/profile.jpg" alt="Sharmila - UI/UX Designer" id="profileImg">
+                <div class="portrait-container">
+                    <div class="portrait-aura-glow"></div>
+                    <div class="portrait-card-frame">
+                        <div class="portrait-glass-backdrop"></div>
+                        <div class="portrait-image-wrapper">
+                            <img src="images/sharmila-cutout.png" alt="Sharmila P — UI/UX Designer" id="profileImg" class="sharmila-hero-photo">
+                        </div>
+                        <div class="portrait-bottom-glass">
+                            <span class="designer-name">Sharmila P</span>
+                            <span class="designer-title">UI/UX Designer • Bangalore</span>
+                        </div>
                     </div>
-                    <div class="floating-badge badge-figma">
-                        <i class="fab fa-figma"></i>
+
+                    <!-- Floating Interactive Badges -->
+                    <div class="floating-badge badge-figma" title="Figma Master">
+                        <div class="badge-icon"><i class="fab fa-figma"></i></div>
+                        <div class="badge-text">
+                            <strong>Figma</strong>
+                            <span>Design Systems</span>
+                        </div>
                     </div>
-                    <div class="floating-badge badge-design">
-                        <i class="fas fa-pen-nib"></i>
+
+                    <div class="floating-badge badge-ux" title="UX Architecture">
+                        <div class="badge-icon"><i class="fas fa-bezier-curve"></i></div>
+                        <div class="badge-text">
+                            <strong>Prototyping</strong>
+                            <span>Interactive Flows</span>
+                        </div>
                     </div>
-                    <div class="floating-badge badge-code">
-                        <i class="fas fa-palette"></i>
+
+                    <div class="floating-badge badge-ai" title="AI Design Tools">
+                        <div class="badge-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <div class="badge-text">
+                            <strong>AI Workflow</strong>
+                            <span>Antigravity & Bold</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-cert" title="Certified UI/UX">
+                        <div class="badge-icon"><i class="fas fa-award"></i></div>
+                        <div class="badge-text">
+                            <strong>Certified</strong>
+                            <span>NovTech Coimbatore</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="mouse-wheel"></div>
+
+        <a href="#about" class="scroll-down-hint" aria-label="Scroll to About section">
+            <span class="scroll-text">Scroll to explore</span>
+            <div class="scroll-indicator-pill">
+                <div class="scroll-dot"></div>
             </div>
-            <span>Scroll Down</span>
-        </div>
+        </a>
     </section>
 
     <!-- ==================== ABOUT SECTION ==================== -->
     <section id="about">
         <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">// About Me</span>
-                <h2 class="section-title">Designing <span class="gradient-text">Experiences</span> That Matter</h2>
+            <div class="section-badge-wrapper animate-on-scroll">
+                <span class="section-chip"><i class="fas fa-user-circle"></i> Personal Profile</span>
             </div>
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Crafting Purposeful & <span class="gradient-text">Delightful</span> Interactions</h2>
+                <p class="section-subtitle">Blending user psychology, aesthetic clarity, and interactive precision to build digital products that people love.</p>
+            </div>
+
             <div class="about-grid">
-                <div class="about-content animate-on-scroll">
-                    <p class="about-text">
-                        I'm a <strong>creative and detail-oriented UI/UX Designer</strong> with hands-on experience 
-                        designing user-centered mobile applications, websites, and digital products. Based in 
-                        <strong>Bangalore, India</strong>, I combine aesthetics with functionality to create 
-                        seamless digital experiences.
-                    </p>
-                    <p class="about-text">
-                        With strong knowledge in <strong>User Research, Wireframing, Prototyping, and Usability Testing</strong>, 
-                        I transform complex problems into elegant, intuitive designs. I'm proficient in 
-                        industry-leading tools like Figma, Adobe XD, Miro, and Balsamiq.
-                    </p>
-                    <p class="about-text">
-                        Currently exploring the power of <strong>AI-powered design tools</strong> including 
-                        Antigravity, Bold AI, Bookipi, and Design Mantic to push the boundaries of modern design workflows.
-                    </p>
-                    <div class="about-info-grid">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <span class="info-label">Location</span>
-                                <span class="info-value">Bangalore, India</span>
+                <div class="about-text-column animate-on-scroll">
+                    <div class="about-card-main">
+                        <p class="lead-bio">
+                            Hello! I am <strong>Sharmila P</strong>, a creative and detail-oriented <strong>UI/UX Designer</strong> 
+                            based in <strong>Bangalore, India</strong>. My mission is to bridge user needs and business goals through thoughtful, 
+                            human-centered design.
+                        </p>
+                        <p class="body-bio">
+                            With specialized expertise across <strong>User Research, Wireframing, High-Fidelity Prototyping, and Usability Testing</strong>, 
+                            I thrive on untangling complex workflows into seamless, intuitive interfaces. Whether it's architecting a mobile SaaS application, 
+                            designing a conversion-optimized e-commerce platform, or crafting brand identity systems, I obsess over every micro-interaction and pixel.
+                        </p>
+                        <p class="body-bio">
+                            I actively augment my design workflow with state-of-the-art <strong>AI tools</strong> including Antigravity, Bold AI, 
+                            Bookipi, and Design Mantic — allowing me to iterate rapidly from conceptual research to high-fidelity clickable deliverables.
+                        </p>
+
+                        <div class="about-key-details">
+                            <div class="detail-box">
+                                <div class="detail-icon"><i class="fas fa-location-dot"></i></div>
+                                <div>
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Bangalore, Karnataka, IN</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span class="info-label">Email</span>
-                                <span class="info-value">sharmi936342@gmail.com</span>
+                            <div class="detail-box">
+                                <div class="detail-icon"><i class="fas fa-envelope-open-text"></i></div>
+                                <div>
+                                    <span class="detail-label">Email</span>
+                                    <span class="detail-value">sharmi936342@gmail.com</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-briefcase"></i>
-                            <div>
-                                <span class="info-label">Specialization</span>
-                                <span class="info-value">UI/UX Design</span>
+                            <div class="detail-box">
+                                <div class="detail-icon"><i class="fas fa-certificate"></i></div>
+                                <div>
+                                    <span class="detail-label">Certification</span>
+                                    <span class="detail-value">UI/UX Designer (NovTech)</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-robot"></i>
-                            <div>
-                                <span class="info-label">Currently</span>
-                                <span class="info-value">Working with AI Tools</span>
+                            <div class="detail-box">
+                                <div class="detail-icon"><i class="fas fa-bolt"></i></div>
+                                <div>
+                                    <span class="detail-label">Core Philosophy</span>
+                                    <span class="detail-value">User-First & Pixel Precision</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-visual animate-on-scroll">
-                    <div class="experience-cards">
-                        <div class="exp-card">
-                            <div class="exp-icon"><i class="fas fa-mobile-alt"></i></div>
-                            <h4>Mobile Design</h4>
-                            <p>User-centered mobile app experiences</p>
+
+                <div class="about-pillars-column animate-on-scroll">
+                    <div class="pillar-cards">
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-magnifying-glass-chart"></i></div>
+                            <div class="pillar-content">
+                                <h3>1. Empathize & Research</h3>
+                                <p>Deep user interviews, competitor benchmarking, and journey mapping to uncover core pain points.</p>
+                            </div>
                         </div>
-                        <div class="exp-card">
-                            <div class="exp-icon"><i class="fas fa-globe"></i></div>
-                            <h4>Web Design</h4>
-                            <p>Responsive & modern websites</p>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-pen-ruler"></i></div>
+                            <div class="pillar-content">
+                                <h3>2. Wireframe & Prototype</h3>
+                                <p>Transforming insights into low-fidelity architecture and fluid, clickable high-fidelity Figma prototypes.</p>
+                            </div>
                         </div>
-                        <div class="exp-card">
-                            <div class="exp-icon"><i class="fas fa-paint-brush"></i></div>
-                            <h4>Branding</h4>
-                            <p>Visual identity & brand systems</p>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-palette"></i></div>
+                            <div class="pillar-content">
+                                <h3>3. UI & Design Systems</h3>
+                                <p>Harmonious color palettes, typography scales, accessibility standards, and reusable component libraries.</p>
+                            </div>
                         </div>
-                        <div class="exp-card">
-                            <div class="exp-icon"><i class="fas fa-share-alt"></i></div>
-                            <h4>Social Media</h4>
-                            <p>Engaging social media designs</p>
+
+                        <div class="pillar-card">
+                            <div class="pillar-icon"><i class="fas fa-vial-circle-check"></i></div>
+                            <div class="pillar-content">
+                                <h3>4. Usability & Test</h3>
+                                <p>Iterative usability testing and heuristic evaluation to guarantee zero-friction user journeys.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,126 +360,116 @@
     <!-- ==================== SKILLS SECTION ==================== -->
     <section id="skills">
         <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">// My Skills</span>
-                <h2 class="section-title">What I <span class="gradient-text">Bring</span> to the Table</h2>
+            <div class="section-badge-wrapper animate-on-scroll">
+                <span class="section-chip"><i class="fas fa-shapes"></i> Expertise</span>
             </div>
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Skills & <span class="gradient-text">Design Toolkit</span></h2>
+                <p class="section-subtitle">A balanced fusion of visual mastery, UX methodology, industry tools, and strategic thinking.</p>
+            </div>
+
             <div class="skills-grid">
-                <!-- Design Skills -->
-                <div class="skill-category animate-on-scroll">
-                    <div class="skill-cat-header">
-                        <div class="skill-cat-icon"><i class="fas fa-pencil-ruler"></i></div>
-                        <h3>Design Skills</h3>
+                <!-- Design Disciplines -->
+                <div class="skill-category-card animate-on-scroll">
+                    <div class="cat-head">
+                        <div class="cat-icon-badge"><i class="fas fa-swatchbook"></i></div>
+                        <div>
+                            <h3>Core Design Disciplines</h3>
+                            <span class="cat-sub">Methods & Practices</span>
+                        </div>
                     </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>User Interface (UI)</span>
-                                <span class="skill-percent">92%</span>
+                    <div class="skill-meter-list">
+                        <div class="skill-meter-item">
+                            <div class="skill-meta">
+                                <span>User Interface (UI) Design</span>
+                                <span class="pct">95%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="92"></div></div>
+                            <div class="meter-track"><div class="meter-fill" data-width="95"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>User Experience (UX)</span>
-                                <span class="skill-percent">88%</span>
+                        <div class="skill-meter-item">
+                            <div class="skill-meta">
+                                <span>User Experience (UX) & Research</span>
+                                <span class="pct">90%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="88"></div></div>
+                            <div class="meter-track"><div class="meter-fill" data-width="90"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Wireframing</span>
-                                <span class="skill-percent">90%</span>
+                        <div class="skill-meter-item">
+                            <div class="skill-meta">
+                                <span>Wireframing & Information Architecture</span>
+                                <span class="pct">92%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                            <div class="meter-track"><div class="meter-fill" data-width="92"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Prototyping</span>
-                                <span class="skill-percent">85%</span>
+                        <div class="skill-meter-item">
+                            <div class="skill-meta">
+                                <span>Interactive Prototyping</span>
+                                <span class="pct">88%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                            <div class="meter-track"><div class="meter-fill" data-width="88"></div></div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Branding</span>
-                                <span class="skill-percent">80%</span>
+                        <div class="skill-meter-item">
+                            <div class="skill-meta">
+                                <span>Usability Testing & Evaluation</span>
+                                <span class="pct">85%</span>
                             </div>
-                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                            <div class="meter-track"><div class="meter-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-meter-item">
+                            <div class="skill-meta">
+                                <span>Branding & Visual Identity</span>
+                                <span class="pct">86%</span>
+                            </div>
+                            <div class="meter-track"><div class="meter-fill" data-width="86"></div></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tools -->
-                <div class="skill-category animate-on-scroll">
-                    <div class="skill-cat-header">
-                        <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
-                        <h3>Design Tools</h3>
-                    </div>
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <i class="fab fa-figma"></i>
-                            <span>Figma</span>
-                        </div>
-                        <div class="tool-card">
-                            <i class="fas fa-pen-fancy"></i>
-                            <span>Adobe XD</span>
-                        </div>
-                        <div class="tool-card">
-                            <i class="fas fa-sitemap"></i>
-                            <span>Miro</span>
-                        </div>
-                        <div class="tool-card">
-                            <i class="fas fa-drafting-compass"></i>
-                            <span>Balsamiq</span>
+                <!-- Design Tools -->
+                <div class="skill-category-card animate-on-scroll">
+                    <div class="cat-head">
+                        <div class="cat-icon-badge"><i class="fas fa-toolbox"></i></div>
+                        <div>
+                            <h3>Industry Design Tools</h3>
+                            <span class="cat-sub">Software & Platforms</span>
                         </div>
                     </div>
-                </div>
+                    <div class="tools-showcase-grid">
+                        <div class="tool-tile">
+                            <div class="tool-tile-icon figma-color"><i class="fab fa-figma"></i></div>
+                            <h4>Figma</h4>
+                            <p>Components, Auto-Layout & Prototypes</p>
+                            <span class="tool-tag">Primary Tool</span>
+                        </div>
+                        <div class="tool-tile">
+                            <div class="tool-tile-icon xd-color"><i class="fas fa-pen-nib"></i></div>
+                            <h4>Adobe XD</h4>
+                            <p>Screen Design & Vector Layouts</p>
+                            <span class="tool-tag">Proficient</span>
+                        </div>
+                        <div class="tool-tile">
+                            <div class="tool-tile-icon miro-color"><i class="fas fa-sitemap"></i></div>
+                            <h4>Miro</h4>
+                            <p>Brainstorming & User Journey Mapping</p>
+                            <span class="tool-tag">Proficient</span>
+                        </div>
+                        <div class="tool-tile">
+                            <div class="tool-tile-icon balsamiq-color"><i class="fas fa-drafting-compass"></i></div>
+                            <h4>Balsamiq</h4>
+                            <p>Rapid Low-Fidelity Wireframes</p>
+                            <span class="tool-tag">Proficient</span>
+                        </div>
+                    </div>
 
-                <!-- Soft Skills -->
-                <div class="skill-category animate-on-scroll">
-                    <div class="skill-cat-header">
-                        <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
-                        <h3>Core Strengths</h3>
-                    </div>
-                    <div class="strength-tags">
-                        <span class="strength-tag">Problem Solving</span>
-                        <span class="strength-tag">Critical Thinking</span>
-                        <span class="strength-tag">User Research</span>
-                        <span class="strength-tag">Usability Testing</span>
-                        <span class="strength-tag">Mobile Design</span>
-                        <span class="strength-tag">Web Design</span>
-                        <span class="strength-tag">Social Media Posts</span>
-                        <span class="strength-tag">Design Systems</span>
-                    </div>
-                </div>
-
-                <!-- AI Tools -->
-                <div class="skill-category animate-on-scroll">
-                    <div class="skill-cat-header">
-                        <div class="skill-cat-icon"><i class="fas fa-robot"></i></div>
-                        <h3>AI Design Tools</h3>
-                    </div>
-                    <div class="ai-tools">
-                        <div class="ai-tool-card">
-                            <div class="ai-icon">🚀</div>
-                            <h4>Antigravity</h4>
-                            <span class="ai-status">Learning</span>
-                        </div>
-                        <div class="ai-tool-card">
-                            <div class="ai-icon">⚡</div>
-                            <h4>Bold AI</h4>
-                            <span class="ai-status">Learning</span>
-                        </div>
-                        <div class="ai-tool-card">
-                            <div class="ai-icon">📘</div>
-                            <h4>Bookipi</h4>
-                            <span class="ai-status">Learning</span>
-                        </div>
-                        <div class="ai-tool-card">
-                            <div class="ai-icon">🎨</div>
-                            <h4>Design Mantic</h4>
-                            <span class="ai-status">Currently Working</span>
+                    <!-- Additional Strengths Tags -->
+                    <div class="soft-skills-cluster">
+                        <span class="cluster-title">Core Strengths:</span>
+                        <div class="tags-row">
+                            <span class="tag-chip">Problem Solving</span>
+                            <span class="tag-chip">Critical Thinking</span>
+                            <span class="tag-chip">Mobile & Web Design</span>
+                            <span class="tag-chip">Social Media Posts</span>
+                            <span class="tag-chip">Design Systems</span>
+                            <span class="tag-chip">User Empathy</span>
                         </div>
                     </div>
                 </div>
@@ -346,199 +477,373 @@
         </div>
     </section>
 
-    <!-- ==================== PROJECTS SECTION ==================== -->
+    <!-- ==================== FEATURED PROJECTS SECTION ==================== -->
     <section id="projects">
         <div class="container">
+            <div class="section-badge-wrapper animate-on-scroll">
+                <span class="section-chip"><i class="fas fa-rocket"></i> Portfolio Work</span>
+            </div>
             <div class="section-header animate-on-scroll">
-                <span class="section-tag">// My Work</span>
-                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-                <p class="section-subtitle">A showcase of my UI/UX design projects — from mobile apps to web platforms</p>
+                <h2 class="section-title">Selected <span class="gradient-text">Featured Projects</span></h2>
+                <p class="section-subtitle">High-fidelity UI/UX projects encompassing mobile apps, web design, interactive prototypes, and creative posters.</p>
             </div>
 
+            <!-- Filter Tabs -->
             <div class="projects-filter animate-on-scroll">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn active" data-filter="all">
+                    <span>All Projects</span>
+                    <span class="count-badge">5</span>
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <span>Mobile App</span>
+                    <span class="count-badge">3</span>
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <span>Web Design</span>
+                    <span class="count-badge">1</span>
+                </button>
+                <button class="filter-btn" data-filter="prototype">
+                    <span>Prototype</span>
+                    <span class="count-badge">1</span>
+                </button>
+                <button class="filter-btn" data-filter="posters">
+                    <span>Posters & Branding</span>
+                    <span class="count-badge">1</span>
+                </button>
             </div>
 
+            <!-- Projects Grid (5 Core Flagship Projects) -->
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card animate-on-scroll" data-category="mobile">
-                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <img src="images/app-screens.png" alt="Mobile App Prototype" class="project-thumb">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.figma.com/proto/nwDnou5TTl1gcGtTa3x5sc/Untitled?node-id=1-2&t=GNsBj65nKpBicAgL-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="project-link-btn">
+                
+                <!-- PROJECT 1: Interactive Mobile App Prototype -->
+                <div class="project-card animate-on-scroll" data-category="prototype mobile" data-project-id="project-1">
+                    <div class="project-media-wrap">
+                        <img src="images/project-prototype-showcase.jpg" alt="Interactive Mobile App Prototype" class="project-card-img" loading="lazy">
+                        <div class="project-card-badge"><i class="fas fa-play-circle"></i> Live Prototype</div>
+                        <div class="project-hover-overlay">
+                            <div class="overlay-actions">
+                                <a href="https://www.figma.com/proto/nwDnou5TTl1gcGtTa3x5sc/Untitled?node-id=1-2&t=GNsBj65nKpBicAgL-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="overlay-btn primary-btn" title="Launch Interactive Prototype">
                                     <i class="fas fa-external-link-alt"></i>
-                                    <span>View Prototype</span>
+                                    <span>Run Prototype</span>
                                 </a>
+                                <button class="overlay-btn secondary-btn view-details-btn" data-modal="modal-p1" title="View Project Details">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Case Study</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-icon-large"><i class="fas fa-mobile-alt"></i></div>
                     </div>
-                    <div class="project-info">
+                    <div class="project-card-body">
                         <div class="project-tags">
-                            <span class="project-tag">Mobile</span>
-                            <span class="project-tag">Prototype</span>
+                            <span class="ptag">Prototype</span>
+                            <span class="ptag">Mobile UX</span>
+                            <span class="ptag">User Flow</span>
                         </div>
-                        <h3 class="project-title">Mobile App Prototype</h3>
-                        <p class="project-desc">Interactive mobile application prototype with complete user flow, navigation design, and micro-interactions.</p>
-                        <div class="project-meta">
-                            <span><i class="fab fa-figma"></i> Figma</span>
-                            <span><i class="fas fa-layer-group"></i> UI/UX</span>
+                        <h3 class="project-card-title">Mobile App Interactive Prototype</h3>
+                        <p class="project-card-desc">
+                            End-to-end interactive mobile app prototype engineered in Figma featuring smooth screen transitions, gesture navigation, and cohesive micro-interactions.
+                        </p>
+                        <div class="project-card-footer">
+                            <div class="meta-tool">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma Prototype</span>
+                            </div>
+                            <a href="https://www.figma.com/proto/nwDnou5TTl1gcGtTa3x5sc/Untitled?node-id=1-2&t=GNsBj65nKpBicAgL-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank" class="card-link-arrow">
+                                <span>Test Flow</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card animate-on-scroll" data-category="web">
-                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <img src="images/casestudy.png" alt="Web Dashboard UI" class="project-thumb">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.figma.com/design/hF61e3M57qGp50jRxkf47c/Untitled?node-id=57-223&t=Lpk9hTY1vY6F8srl-1" target="_blank" class="project-link-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Design</span>
+                <!-- PROJECT 2: DigiSub Subscription Management App -->
+                <div class="project-card animate-on-scroll" data-category="mobile app" data-project-id="project-2">
+                    <div class="project-media-wrap">
+                        <img src="images/project-digisub-showcase.jpg" alt="DigiSub Subscription Management App" class="project-card-img" loading="lazy">
+                        <div class="project-card-badge"><i class="fas fa-wallet"></i> Fintech & SaaS</div>
+                        <div class="project-hover-overlay">
+                            <div class="overlay-actions">
+                                <a href="https://www.figma.com/design/pCz9zJgmnKzZsLyNERSXZO/Subscription-Management-App--Community-?node-id=1136-316&t=Tf35fL1O9sKqHbIK-1" target="_blank" class="overlay-btn primary-btn" title="Open Figma File">
+                                    <i class="fab fa-figma"></i>
+                                    <span>Open Figma</span>
                                 </a>
+                                <button class="overlay-btn secondary-btn view-details-btn" data-modal="modal-p2" title="View Project Details">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Case Study</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-icon-large"><i class="fas fa-desktop"></i></div>
                     </div>
-                    <div class="project-info">
+                    <div class="project-card-body">
                         <div class="project-tags">
-                            <span class="project-tag">Web</span>
-                            <span class="project-tag">Dashboard</span>
+                            <span class="ptag">Mobile App</span>
+                            <span class="ptag">Fintech</span>
+                            <span class="ptag">Design System</span>
                         </div>
-                        <h3 class="project-title">Web Dashboard UI</h3>
-                        <p class="project-desc">Clean and modern web dashboard design with data visualization components and intuitive navigation structure.</p>
-                        <div class="project-meta">
-                            <span><i class="fab fa-figma"></i> Figma</span>
-                            <span><i class="fas fa-chart-bar"></i> Dashboard</span>
+                        <h3 class="project-card-title">DigiSub — Subscription Manager</h3>
+                        <p class="project-card-desc">
+                            Community-driven subscription tracking and billing manager allowing users to monitor recurring payments, prevent surprise auto-renewals, and manage family plans.
+                        </p>
+                        <div class="project-card-footer">
+                            <div class="meta-tool">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma Design</span>
+                            </div>
+                            <a href="https://www.figma.com/design/pCz9zJgmnKzZsLyNERSXZO/Subscription-Management-App--Community-?node-id=1136-316&t=Tf35fL1O9sKqHbIK-1" target="_blank" class="card-link-arrow">
+                                <span>View File</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card animate-on-scroll" data-category="app">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <img src="images/digisub.jpg" alt="Subscription Management App" class="project-thumb">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.figma.com/design/pCz9zJgmnKzZsLyNERSXZO/Subscription-Management-App--Community-?node-id=1136-316&t=Tf35fL1O9sKqHbIK-1" target="_blank" class="project-link-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Design</span>
+                <!-- PROJECT 3: Beauty & Cosmetic E-Commerce Website -->
+                <div class="project-card animate-on-scroll" data-category="web" data-project-id="project-3">
+                    <div class="project-media-wrap">
+                        <img src="images/project-cosmetics-showcase.jpg" alt="LuxeGlow Beauty & Cosmetics Website" class="project-card-img" loading="lazy">
+                        <div class="project-card-badge"><i class="fas fa-gem"></i> E-Commerce Web</div>
+                        <div class="project-hover-overlay">
+                            <div class="overlay-actions">
+                                <a href="https://www.figma.com/design/AoTzbHNLpQ8I5fMZZRMYOZ/beauty-cosmetic-website-1?node-id=2-2&t=NcWihcLbWpbYNZH9-1" target="_blank" class="overlay-btn primary-btn" title="Open Figma File">
+                                    <i class="fab fa-figma"></i>
+                                    <span>Open Figma</span>
                                 </a>
+                                <button class="overlay-btn secondary-btn view-details-btn" data-modal="modal-p3" title="View Project Details">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Case Study</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-icon-large"><i class="fas fa-credit-card"></i></div>
                     </div>
-                    <div class="project-info">
+                    <div class="project-card-body">
                         <div class="project-tags">
-                            <span class="project-tag">App</span>
-                            <span class="project-tag">SaaS</span>
+                            <span class="ptag">Web Design</span>
+                            <span class="ptag">E-Commerce</span>
+                            <span class="ptag">Responsive</span>
                         </div>
-                        <h3 class="project-title">Subscription Management App</h3>
-                        <p class="project-desc">Community-driven subscription management application with user-friendly billing, plans, and analytics features.</p>
-                        <div class="project-meta">
-                            <span><i class="fab fa-figma"></i> Figma</span>
-                            <span><i class="fas fa-users"></i> Community</span>
+                        <h3 class="project-card-title">LuxeGlow — Beauty & Cosmetics Web</h3>
+                        <p class="project-card-desc">
+                            Aesthetic beauty and skincare digital storefront engineered with refined typography, ingredient transparency cards, and a streamlined shopping user journey.
+                        </p>
+                        <div class="project-card-footer">
+                            <div class="meta-tool">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma Design</span>
+                            </div>
+                            <a href="https://www.figma.com/design/AoTzbHNLpQ8I5fMZZRMYOZ/beauty-cosmetic-website-1?node-id=2-2&t=NcWihcLbWpbYNZH9-1" target="_blank" class="card-link-arrow">
+                                <span>View File</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4 -->
-                <div class="project-card animate-on-scroll" data-category="mobile">
-                    <div class="project-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);">
-                        <img src="images/tunehub.png" alt="E-Commerce App Design" class="project-thumb">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.figma.com/design/FfnT3R0FDdV5TNoFNKjQrN/Untitled?node-id=0-1&t=NcWihcLbWpbYNZH9-1" target="_blank" class="project-link-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Design</span>
+                <!-- PROJECT 4: TuneHub Music Streaming App -->
+                <div class="project-card animate-on-scroll" data-category="mobile app" data-project-id="project-4">
+                    <div class="project-media-wrap">
+                        <img src="images/project-tunehub-showcase.jpg" alt="TuneHub Music Streaming App" class="project-card-img" loading="lazy">
+                        <div class="project-card-badge"><i class="fas fa-music"></i> Mobile Audio UX</div>
+                        <div class="project-hover-overlay">
+                            <div class="overlay-actions">
+                                <a href="https://www.figma.com/design/FfnT3R0FDdV5TNoFNKjQrN/Untitled?node-id=0-1&t=NcWihcLbWpbYNZH9-1" target="_blank" class="overlay-btn primary-btn" title="Open Figma File">
+                                    <i class="fab fa-figma"></i>
+                                    <span>Open Figma</span>
                                 </a>
+                                <button class="overlay-btn secondary-btn view-details-btn" data-modal="modal-p4" title="View Project Details">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Case Study</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-icon-large"><i class="fas fa-shopping-bag"></i></div>
                     </div>
-                    <div class="project-info">
+                    <div class="project-card-body">
                         <div class="project-tags">
-                            <span class="project-tag">Mobile</span>
-                            <span class="project-tag">E-Commerce</span>
+                            <span class="ptag">Mobile App</span>
+                            <span class="ptag">Entertainment</span>
+                            <span class="ptag">Audio UI</span>
                         </div>
-                        <h3 class="project-title">E-Commerce App Design</h3>
-                        <p class="project-desc">Modern e-commerce mobile application with seamless shopping experience, product discovery, and checkout flow.</p>
-                        <div class="project-meta">
-                            <span><i class="fab fa-figma"></i> Figma</span>
-                            <span><i class="fas fa-shopping-cart"></i> Commerce</span>
+                        <h3 class="project-card-title">TuneHub — Music Streaming Platform</h3>
+                        <p class="project-card-desc">
+                            Modern mobile music streaming interface featuring immersive player views, smart queuing, customized playlist curation, and seamless gesture controls.
+                        </p>
+                        <div class="project-card-footer">
+                            <div class="meta-tool">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma Design</span>
+                            </div>
+                            <a href="https://www.figma.com/design/FfnT3R0FDdV5TNoFNKjQrN/Untitled?node-id=0-1&t=NcWihcLbWpbYNZH9-1" target="_blank" class="card-link-arrow">
+                                <span>View File</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card animate-on-scroll" data-category="web">
-                    <div class="project-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
-                        <img src="images/juice-design.png" alt="Beauty Cosmetic Website" class="project-thumb">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.figma.com/design/AoTzbHNLpQ8I5fMZZRMYOZ/beauty-cosmetic-website-1?node-id=2-2&t=NcWihcLbWpbYNZH9-1" target="_blank" class="project-link-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Design</span>
+                <!-- PROJECT 5: Posters & Social Media Branding Series -->
+                <div class="project-card animate-on-scroll" data-category="posters" data-project-id="project-5">
+                    <div class="project-media-wrap">
+                        <img src="images/project-poster-showcase.jpg" alt="Creative Posters and Social Media Campaigns" class="project-card-img" loading="lazy">
+                        <div class="project-card-badge"><i class="fas fa-bullhorn"></i> Branding & Posters</div>
+                        <div class="project-hover-overlay">
+                            <div class="overlay-actions">
+                                <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="overlay-btn primary-btn" title="View on Behance">
+                                    <i class="fab fa-behance"></i>
+                                    <span>View Behance</span>
                                 </a>
+                                <button class="overlay-btn secondary-btn view-details-btn" data-modal="modal-p5" title="View Project Details">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Showcase</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="project-icon-large"><i class="fas fa-spa"></i></div>
                     </div>
-                    <div class="project-info">
+                    <div class="project-card-body">
                         <div class="project-tags">
-                            <span class="project-tag">Web</span>
-                            <span class="project-tag">Beauty</span>
+                            <span class="ptag">Posters</span>
+                            <span class="ptag">Social Media</span>
+                            <span class="ptag">Visual Design</span>
                         </div>
-                        <h3 class="project-title">Beauty Cosmetic Website</h3>
-                        <p class="project-desc">Elegant beauty and cosmetics website design with product showcases, brand storytelling, and smooth user journey.</p>
-                        <div class="project-meta">
-                            <span><i class="fab fa-figma"></i> Figma</span>
-                            <span><i class="fas fa-gem"></i> Beauty</span>
+                        <h3 class="project-card-title">Visual Identity & Editorial Posters</h3>
+                        <p class="project-card-desc">
+                            High-impact graphic series including the Gandhi Jayanti commemorative tribute poster and 'Life Abroad' editorial social media campaign with rich typographic hierarchy.
+                        </p>
+                        <div class="project-card-footer">
+                            <div class="meta-tool">
+                                <i class="fab fa-behance"></i>
+                                <span>Behance Gallery</span>
+                            </div>
+                            <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="card-link-arrow">
+                                <span>Explore Series</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 6 -->
-                <div class="project-card animate-on-scroll" data-category="app">
-                    <div class="project-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                        <img src="images/pg-hostel.png" alt="Social Platform Design" class="project-thumb">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://www.figma.com/design/B1kDIuQksw6DTos9HKX6UZ/Untitled?node-id=3-418&t=NcWihcLbWpbYNZH9-1" target="_blank" class="project-link-btn">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span>View Design</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project-icon-large"><i class="fas fa-comments"></i></div>
-                    </div>
-                    <div class="project-info">
-                        <div class="project-tags">
-                            <span class="project-tag">App</span>
-                            <span class="project-tag">Social</span>
-                        </div>
-                        <h3 class="project-title">Social Platform Design</h3>
-                        <p class="project-desc">Social networking platform design with community features, real-time messaging, and content sharing capabilities.</p>
-                        <div class="project-meta">
-                            <span><i class="fab fa-figma"></i> Figma</span>
-                            <span><i class="fas fa-heart"></i> Social</span>
-                        </div>
-                    </div>
-                </div>
             </div>
 
-            <!-- Behance CTA -->
-            <div class="projects-cta animate-on-scroll">
-                <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="behance-btn">
-                    <i class="fab fa-behance"></i>
-                    <span>View More on Behance</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
+            <!-- Behance & Figma Hub Banner -->
+            <div class="projects-hub-banner animate-on-scroll">
+                <div class="hub-text">
+                    <h3>Want to explore more raw designs & case studies?</h3>
+                    <p>Discover my full portfolio on Behance and interactive design files on Figma.</p>
+                </div>
+                <div class="hub-buttons">
+                    <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="btn btn-behance">
+                        <i class="fab fa-behance"></i>
+                        <span>Explore on Behance</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sharmila-p-76616a293/" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>Connect on LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== AI DESIGN TOOLS & WORKFLOW SECTION ==================== -->
+    <section id="ai-tools">
+        <div class="container">
+            <div class="section-badge-wrapper animate-on-scroll">
+                <span class="section-chip"><i class="fas fa-wand-magic-sparkles"></i> Future-Proof Design</span>
+            </div>
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Next-Gen <span class="gradient-text">AI Tools & Modern Workflow</span></h2>
+                <p class="section-subtitle">Integrating cutting-edge AI software to accelerate research synthesis, wireframing speed, and pixel-level delivery.</p>
+            </div>
+
+            <div class="ai-tools-grid">
+                <!-- Tool 1: Antigravity -->
+                <div class="ai-tool-card animate-on-scroll">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-tool-header">
+                        <div class="ai-tool-icon antigravity-icon">
+                            <i class="fas fa-space-shuttle"></i>
+                        </div>
+                        <span class="ai-badge active-badge">Working</span>
+                    </div>
+                    <h3>Antigravity</h3>
+                    <span class="ai-tool-role">Autonomous Prototyping & Code Acceleration</span>
+                    <p>Leveraging agentic AI to bridge high-fidelity UI design tokens directly with responsive web frameworks and live interactive preview environments.</p>
+                    <div class="ai-features">
+                        <span><i class="fas fa-check"></i> Live Interactive Preview</span>
+                        <span><i class="fas fa-check"></i> Token Synchronization</span>
+                    </div>
+                </div>
+
+                <!-- Tool 2: Bold AI -->
+                <div class="ai-tool-card animate-on-scroll">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-tool-header">
+                        <div class="ai-tool-icon bold-icon">
+                            <i class="fas fa-bolt-lightning"></i>
+                        </div>
+                        <span class="ai-badge active-badge">Working</span>
+                    </div>
+                    <h3>Bold AI</h3>
+                    <span class="ai-tool-role">Generative Ideation & UX Copywriting</span>
+                    <p>Utilizing AI prompts for rapid layout exploration, persona ideation, contextual microcopy generation, and accessibility compliance checking.</p>
+                    <div class="ai-features">
+                        <span><i class="fas fa-check"></i> Persona Brainstorming</span>
+                        <span><i class="fas fa-check"></i> Contextual Microcopy</span>
+                    </div>
+                </div>
+
+                <!-- Tool 3: Bookipi -->
+                <div class="ai-tool-card animate-on-scroll">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-tool-header">
+                        <div class="ai-tool-icon bookipi-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <span class="ai-badge active-badge">Working</span>
+                    </div>
+                    <h3>Bookipi</h3>
+                    <span class="ai-tool-role">Design Business & Freelance Operations</span>
+                    <p>Streamlining client proposals, scope estimation, invoicing, and design project lifecycle management with clean automated workflows.</p>
+                    <div class="ai-features">
+                        <span><i class="fas fa-check"></i> Project Estimation</span>
+                        <span><i class="fas fa-check"></i> Seamless Client Billing</span>
+                    </div>
+                </div>
+
+                <!-- Tool 4: Design Mantic -->
+                <div class="ai-tool-card animate-on-scroll">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-tool-header">
+                        <div class="ai-tool-icon mantic-icon">
+                            <i class="fas fa-compass-drafting"></i>
+                        </div>
+                        <span class="ai-badge active-badge">Currently Working</span>
+                    </div>
+                    <h3>Design Mantic</h3>
+                    <span class="ai-tool-role">Brand Identity & Algorithmic Layouts</span>
+                    <p>Rapid brand mark generation, typography pairing analysis, and corporate identity system prototyping for digital products.</p>
+                    <div class="ai-features">
+                        <span><i class="fas fa-check"></i> Logo Prototyping</span>
+                        <span><i class="fas fa-check"></i> Typography Harmonization</span>
+                    </div>
+                </div>
+
+                <!-- Tool 5: Modern Frameworks & Component Systems -->
+                <div class="ai-tool-card animate-on-scroll full-width-tool">
+                    <div class="ai-card-glow"></div>
+                    <div class="ai-tool-header">
+                        <div class="ai-tool-icon frameworks-icon">
+                            <i class="fas fa-cubes-stacked"></i>
+                        </div>
+                        <span class="ai-badge active-badge">Integrated</span>
+                    </div>
+                    <h3>Modern Design Frameworks & Auto-Layout</h3>
+                    <span class="ai-tool-role">Tokenized Design Systems & Responsive Architecture</span>
+                    <p>Building scalable UI architectures using 8-point spatial grids, atomic design principles, dynamic token variables, and fluid responsive breakpoint rules that engineering teams can effortlessly implement.</p>
+                    <div class="ai-features flex-row">
+                        <span><i class="fas fa-check"></i> 8-Point Spatial Grid</span>
+                        <span><i class="fas fa-check"></i> Atomic Design Hierarchy</span>
+                        <span><i class="fas fa-check"></i> Developer Hand-off Ready</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -546,34 +851,75 @@
     <!-- ==================== CERTIFICATIONS SECTION ==================== -->
     <section id="certifications">
         <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">// Certifications</span>
-                <h2 class="section-title">Professional <span class="gradient-text">Credentials</span></h2>
+            <div class="section-badge-wrapper animate-on-scroll">
+                <span class="section-chip"><i class="fas fa-certificate"></i> Verified Qualifications</span>
             </div>
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+                <p class="section-subtitle">Formal credentials backing my UX methodologies and modern technical foundation.</p>
+            </div>
+
             <div class="cert-grid">
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon">
-                        <i class="fas fa-certificate"></i>
+                <!-- Certification 1: UI/UX Designer -->
+                <div class="cert-card-luxe animate-on-scroll">
+                    <div class="cert-card-accent"></div>
+                    <div class="cert-body">
+                        <div class="cert-top-row">
+                            <div class="cert-icon-box uiux-badge-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span class="cert-status-tag"><i class="fas fa-circle-check"></i> Verified Certified</span>
+                        </div>
+                        <h3 class="cert-role-title">UI/UX Designer</h3>
+                        <div class="cert-institute">
+                            <i class="fas fa-building-columns"></i>
+                            <strong>NovTech – Coimbatore</strong>
+                        </div>
+                        <div class="cert-duration">
+                            <i class="fas fa-calendar-days"></i>
+                            <span>November 2025 – December 2025</span>
+                        </div>
+                        <p class="cert-summary">
+                            Comprehensive practical training covering human-computer interaction, user research synthesis, wireframe fidelity, interactive Figma prototyping, and usability validation.
+                        </p>
+                        <div class="cert-tags">
+                            <span>User Research</span>
+                            <span>Prototyping</span>
+                            <span>Usability Testing</span>
+                            <span>Design Systems</span>
+                        </div>
                     </div>
-                    <div class="cert-content">
-                        <h3>UI/UX Designer</h3>
-                        <p class="cert-org"><i class="fas fa-building"></i> NovTech – Coimbatore</p>
-                        <p class="cert-date"><i class="fas fa-calendar-alt"></i> November 2025 – December 2025</p>
-                        <div class="cert-badge">Certified</div>
-                    </div>
-                    <div class="cert-decoration"></div>
                 </div>
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon">
-                        <i class="fas fa-server"></i>
+
+                <!-- Certification 2: DevOps -->
+                <div class="cert-card-luxe animate-on-scroll">
+                    <div class="cert-card-accent accent-cyan"></div>
+                    <div class="cert-body">
+                        <div class="cert-top-row">
+                            <div class="cert-icon-box devops-badge-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span class="cert-status-tag"><i class="fas fa-circle-check"></i> Verified Certified</span>
+                        </div>
+                        <h3 class="cert-role-title">DevOps Foundation</h3>
+                        <div class="cert-institute">
+                            <i class="fas fa-building-columns"></i>
+                            <strong>Greens Technology</strong>
+                        </div>
+                        <div class="cert-duration">
+                            <i class="fas fa-calendar-days"></i>
+                            <span>August 2024 – October 2024</span>
+                        </div>
+                        <p class="cert-summary">
+                            Foundational training in modern deployment pipelines, cloud environments, version control, and infrastructure workflows — granting a strong edge when collaborating with engineering squads.
+                        </p>
+                        <div class="cert-tags">
+                            <span>Cloud Basics</span>
+                            <span>Version Control</span>
+                            <span>CI/CD Mindset</span>
+                            <span>Agile Teamwork</span>
+                        </div>
                     </div>
-                    <div class="cert-content">
-                        <h3>DevOps</h3>
-                        <p class="cert-org"><i class="fas fa-building"></i> Greens Technology</p>
-                        <p class="cert-date"><i class="fas fa-calendar-alt"></i> August 2024 – October 2024</p>
-                        <div class="cert-badge">Certified</div>
-                    </div>
-                    <div class="cert-decoration"></div>
                 </div>
             </div>
         </div>
@@ -582,70 +928,129 @@
     <!-- ==================== CONTACT SECTION ==================== -->
     <section id="contact">
         <div class="container">
-            <div class="section-header animate-on-scroll">
-                <span class="section-tag">// Get In Touch</span>
-                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
-                <p class="section-subtitle">Have a project in mind? Let's create something amazing together.</p>
+            <div class="section-badge-wrapper animate-on-scroll">
+                <span class="section-chip"><i class="fas fa-paper-plane"></i> Let's Talk</span>
             </div>
+            <div class="section-header animate-on-scroll">
+                <h2 class="section-title">Ready to <span class="gradient-text">Build Something Amazing?</span></h2>
+                <p class="section-subtitle">Whether you have a full-time role, a freelance design inquiry, or just want to discuss UX, my inbox is open.</p>
+            </div>
+
             <div class="contact-grid">
-                <div class="contact-info animate-on-scroll">
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                        <div>
-                            <h4>Email Me</h4>
-                            <a href="mailto:sharmi936342@gmail.com">sharmi936342@gmail.com</a>
+                <!-- Contact Information -->
+                <div class="contact-info-card animate-on-scroll">
+                    <h3>Get in Touch Directly</h3>
+                    <p class="contact-intro-text">
+                        I am currently available for new opportunities based in <strong>Bangalore</strong> or remote worldwide. 
+                        Feel free to reach out via email or connect with me across professional networks.
+                    </p>
+
+                    <div class="contact-method-items">
+                        <!-- Email Item -->
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Direct Email</span>
+                                <a href="mailto:sharmi936342@gmail.com" class="method-value">sharmi936342@gmail.com</a>
+                            </div>
+                            <button class="copy-email-btn" id="copyEmailBtn" title="Copy email address">
+                                <i class="fas fa-copy"></i>
+                                <span class="copy-tooltip">Copy</span>
+                            </button>
+                        </div>
+
+                        <!-- Location Item -->
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-map-location-dot"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Current Base</span>
+                                <span class="method-value">Bangalore, Karnataka, India</span>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Item -->
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Professional Profile</span>
+                                <a href="https://www.linkedin.com/in/sharmila-p-76616a293/" target="_blank" class="method-value">linkedin.com/in/sharmila-p-76616a293/ ↗</a>
+                            </div>
+                        </div>
+
+                        <!-- Behance Item -->
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fab fa-behance"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Design Case Studies</span>
+                                <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="method-value">behance.net/sharmisharmila5 ↗</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Bangalore, India</p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icon"><i class="fab fa-behance"></i></div>
-                        <div>
-                            <h4>Behance</h4>
-                            <a href="https://www.behance.net/sharmisharmila5" target="_blank">View Portfolio</a>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="mailto:sharmi936342@gmail.com" class="social-link" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="social-link" aria-label="Behance">
-                            <i class="fab fa-behance"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
+
+                    <!-- Social Icons Row -->
+                    <div class="socials-pill-row">
+                        <a href="https://www.linkedin.com/in/sharmila-p-76616a293/" target="_blank" class="social-circle" aria-label="LinkedIn" title="Connect on LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="social-link" aria-label="Dribbble">
-                            <i class="fab fa-dribbble"></i>
+                        <a href="https://www.behance.net/sharmisharmila5" target="_blank" class="social-circle" aria-label="Behance" title="View Behance Works">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="mailto:sharmi936342@gmail.com" class="social-circle" aria-label="Email" title="Send Direct Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/lillycrm601-droid/Sharmila-portfolio" target="_blank" class="social-circle" aria-label="GitHub" title="GitHub Codebase">
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper animate-on-scroll">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
+
+                <!-- Contact Form Wrapper -->
+                <div class="contact-form-glass animate-on-scroll">
+                    <form class="luxe-form" id="contactForm">
+                        <div class="form-title-group">
+                            <h4>Send a Message</h4>
+                            <p>Fill out the form below and I'll get back to you within 24 hours.</p>
+                        </div>
+
+                        <div class="form-floating-group">
                             <input type="text" id="name" placeholder=" " required>
-                            <label for="name">Your Name</label>
-                            <span class="form-line"></span>
+                            <label for="name"><i class="fas fa-user"></i> Your Full Name</label>
+                            <span class="focus-bar"></span>
                         </div>
-                        <div class="form-group">
+
+                        <div class="form-floating-group">
                             <input type="email" id="email" placeholder=" " required>
-                            <label for="email">Your Email</label>
-                            <span class="form-line"></span>
+                            <label for="email"><i class="fas fa-at"></i> Your Email Address</label>
+                            <span class="focus-bar"></span>
                         </div>
-                        <div class="form-group">
+
+                        <div class="form-floating-group">
+                            <select id="projectType">
+                                <option value="UI/UX Design Project">UI/UX Design Project</option>
+                                <option value="Mobile App Design">Mobile App Design</option>
+                                <option value="Web Design / Redesign">Web Design / Redesign</option>
+                                <option value="Interactive Prototype">Interactive Prototype</option>
+                                <option value="Full-Time / Contract Role">Full-Time / Contract Role</option>
+                                <option value="General Conversation">General Conversation</option>
+                            </select>
+                            <label for="projectType"><i class="fas fa-tag"></i> Inquiry Subject</label>
+                            <span class="focus-bar"></span>
+                        </div>
+
+                        <div class="form-floating-group">
                             <textarea id="message" rows="4" placeholder=" " required></textarea>
-                            <label for="message">Your Message</label>
-                            <span class="form-line"></span>
+                            <label for="message"><i class="fas fa-message"></i> Project Details or Message</label>
+                            <span class="focus-bar"></span>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-submit">
-                            <span>Send Message</span>
+
+                        <button type="submit" class="btn btn-primary btn-submit-full" id="submitBtn">
+                            <span>Send Message via Email</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
+
+                        <div class="form-notice">
+                            <i class="fas fa-shield-halved"></i> Your information will only be used to respond to your inquiry.
+                        </div>
                     </form>
                 </div>
             </div>
@@ -654,23 +1059,77 @@
 
     <!-- ==================== FOOTER ==================== -->
     <footer id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-bracket">&lt;</span>Sharmila<span class="logo-bracket">/&gt;</span>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-badge">SP</span>
+                        <span class="logo-name">Sharmila P</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Creative and detail-oriented UI/UX Designer crafting user-centered mobile apps, web experiences, and scalable design systems from Bangalore, India.
+                    </p>
                 </div>
-                <p class="footer-text">Crafting beautiful digital experiences from Bangalore, India</p>
-                <div class="footer-divider"></div>
-                <p class="footer-copy">&copy; 2025 Sharmila. All rights reserved. Designed with 💜</p>
+
+                <div class="footer-nav-columns">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#hero">Home</a></li>
+                            <li><a href="#about">About Profile</a></li>
+                            <li><a href="#skills">Skills & Tools</a></li>
+                            <li><a href="#projects">Portfolio Work</a></li>
+                            <li><a href="#ai-tools">AI Tools</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Key Links</h4>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/sharmila-p-76616a293/" target="_blank">LinkedIn Profile ↗</a></li>
+                            <li><a href="https://www.behance.net/sharmisharmila5" target="_blank">Behance Portfolio ↗</a></li>
+                            <li><a href="https://github.com/lillycrm601-droid/Sharmila-portfolio" target="_blank">GitHub Repository ↗</a></li>
+                            <li><a href="mailto:sharmi936342@gmail.com">Direct Email ↗</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 <strong>Sharmila P</strong>. All rights reserved. Designed with precision & empathy.</p>
+                <div class="footer-bottom-links">
+                    <a href="#hero">Back to Top <i class="fas fa-arrow-up"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- ==================== BACK TO TOP ==================== -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <!-- ==================== PROJECT DETAILS MODAL ==================== -->
+    <div class="case-study-modal" id="caseStudyModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study Modal">
+                <i class="fas fa-xmark"></i>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- Dynamically filled by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TOAST NOTIFICATION ==================== -->
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-circle-check toast-icon"></i>
+        <span class="toast-message" id="toastMessage">Email copied to clipboard!</span>
+    </div>
+
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
