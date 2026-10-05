@@ -2,83 +2,52 @@
 
 [![UI/UX Designer](https://img.shields.io/badge/Role-UI%2FUX%20Designer-6366f1?style=for-the-badge)](https://www.linkedin.com/in/sharmila-p-76616a293/)
 [![Bangalore, India](https://img.shields.io/badge/Location-Bangalore%2C%20India-ec4899?style=for-the-badge)](mailto:sharmi936342@gmail.com)
-[![Figma Specialist](https://img.shields.io/badge/Tools-Figma%20%7C%20Adobe%20XD%20%7C%20Miro-06b6d4?style=for-the-badge)](https://www.figma.com)
+[![Live Portfolio](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-10b981?style=for-the-badge)](https://zeridexcom.github.io/sharmila-portfolio/)
 
-A world-class, premium, ultra-modern UI/UX Portfolio website for **Sharmila P**, designed with a **Whitish Luxe** minimalist aesthetic, glassmorphic UI components, smooth physics-based animations, and complete mobile responsiveness.
-
----
-
-## 🌟 Live Preview & Deployment
-
-- **GitHub Repository:** [https://github.com/lillycrm601-droid/Sharmila-portfolio.git](https://github.com/lillycrm601-droid/Sharmila-portfolio.git)
-- **GitHub Pages URL (Upon activation):** `https://lillycrm601-droid.github.io/Sharmila-portfolio/`
-- **Behance Portfolio:** [https://www.behance.net/sharmisharmila5](https://www.behance.net/sharmisharmila5)
-- **LinkedIn:** [https://www.linkedin.com/in/sharmila-p-76616a293/](https://www.linkedin.com/in/sharmila-p-76616a293/)
+A world-class, premium, ultra-modern UI/UX Portfolio website for **Sharmila P**, designed with an award-winning modernist Whitish Luxe aesthetic, interactive motion, and deep on-page case study explorations.
 
 ---
 
-## 🎨 Key Features & Aesthetic Polish
+## 🌐 Live Public Link & Repository
 
-- 💎 **Whitish Luxe Aesthetic (Default):** Radiant porcelain whites (`#f8fafc`), frosted glassmorphic cards (`rgba(255, 255, 255, 0.92)`), delicate hairline borders, and subtle luxury ambient mesh glow.
-- 🌓 **Interactive Theme Toggle:** Seamlessly switches between **Whitish Luxe** and **Cyber Midnight Glass** with `localStorage` persistence.
-- 🖼️ **Hero Section Portrait:** Features Sharmila's transparent cutout portrait framed in an elegant 3D glass card with floating interactive badges (Figma, Prototyping, AI Workflows, NovTech Certification).
-- 🖱️ **Magnetic Custom Cursor:** Fluid trailing cursor ring with magnetic hover states over interactive cards, buttons, and links.
-- 🌌 **Interactive Ambient Particle Canvas:** Subtle reactive particles that gently drift and respond to screen resizing and theme changes.
-- 📱 **Interactive Project Case Study Modals:** Click on any project card or "Case Study" button to open an in-depth breakdown covering Problem Statements, UX Solutions, Key Highlights, and direct Figma/Prototype links.
-- 🚀 **Next-Gen AI Tools Section:** Showcases Sharmila's forward-looking workflow with Antigravity, Bold AI, Bookipi, Design Mantic, and Modern Component Frameworks.
-- 📋 **1-Click Copy Email & Direct Mailto Form:** Instant clipboard copy with animated toast notifications and formatted email dispatch.
+- **🚀 Live Website (GitHub Pages):** [https://zeridexcom.github.io/sharmila-portfolio/](https://zeridexcom.github.io/sharmila-portfolio/)
+- **📁 GitHub Repository:** [https://github.com/zeridexcom/sharmila-portfolio](https://github.com/zeridexcom/sharmila-portfolio)
+- **🎨 Behance Portfolio:** [https://www.behance.net/sharmisharmila5](https://www.behance.net/sharmisharmila5)
+- **💼 LinkedIn:** [https://www.linkedin.com/in/sharmila-p-76616a293/](https://www.linkedin.com/in/sharmila-p-76616a293/)
 
 ---
 
-## 📁 5 Core Featured Projects
+## 🌟 Key Highlights & Design Innovations
 
-| Project | Category | Highlights | Links |
-| :--- | :--- | :--- | :--- |
-| **Mobile App Interactive Prototype** | Prototype / Mobile | 60 FPS clickable prototype, gesture navigation, micro-interactions | [Figma Prototype](https://www.figma.com/proto/nwDnou5TTl1gcGtTa3x5sc/Untitled?node-id=1-2) |
-| **DigiSub — Subscription Manager** | Mobile App / Fintech | Financial dashboard, renewal alerts, recurring billing telemetry | [Figma Design](https://www.figma.com/design/pCz9zJgmnKzZsLyNERSXZO/Subscription-Management-App--Community-?node-id=1136-316) |
-| **LuxeGlow — Beauty & Cosmetics Web** | Web Design / E-Commerce | Luxury editorial storefront, skin-type quiz, frictionless checkout | [Figma Design](https://www.figma.com/design/AoTzbHNLpQ8I5fMZZRMYOZ/beauty-cosmetic-website-1?node-id=2-2) |
-| **TuneHub — Music Streaming App** | Mobile App / Audio UX | Ambient album player, gesture-based queue reordering, dark mode UI | [Figma Design](https://www.figma.com/design/FfnT3R0FDdV5TNoFNKjQrN/Untitled?node-id=0-1) |
-| **Visual Identity & Editorial Posters** | Branding / Social Media | Gandhi Jayanti commemorative tribute poster, Life Abroad campaign | [Behance Gallery](https://www.behance.net/sharmisharmila5) |
+### 1. 🚗 AutoLux — Luxury Car Detailing Website (Interactive On-Page Showcase)
+- **Live Auto-Scroll Preview:** Visitors can toggle **Auto Scroll** to watch the entire full-length landing page mockup scroll inside a sleek macOS browser viewport, or scroll manually to inspect every pixel.
+- **Fullscreen Lightbox:** One-click modal expansion to inspect the high-resolution design in detail without leaving the site.
+- **Design Tokens & Specs:** Carbon Black (`#0B0E14`), Racing Gold (`#D4AF37`), Titanium Silver (`#E2E8F0`), and Performance Red (`#EF4444`) with typography hierarchy (Syne Display & Plus Jakarta Sans).
 
----
+### 2. 📱 DigiSub — Mobile Subscription Management App (Complete UI/UX Case Study)
+- **Interactive 5-Tab Case Study Engine:**
+  - **Overview & Problem:** Explaining subscription fatigue and auto-renewal traps.
+  - **User Research & Personas:** Deep profiles for Alex Mercer (Tech Professional) & Priya Sharma (Student / Group Sharer).
+  - **Final High-Fi UI Showcase:** High-definition mobile screen exploration highlighting card telemetry, upcoming billing reminders, and 1-tap cancellation assistance.
+  - **Design System & Tokens:** Emerald (`#10B981`), Indigo (`#6366F1`), and Sunset Coral (`#F43F5E`) component tokens.
+  - **Usability Metrics:** 94/100 SUS score and 42% faster cancellation flow.
 
-## 🛠️ Design Tools & Skills
+### 3. 🍹 PureDrop — 4-Bottle Interactive Sliding Showcase
+- **Animated 4-Bottle Carousel:** Sliced and centered into 4 distinct custom flavor bottles:
+  - 🍊 **Flavor 01: Citrus Sunrise** (Orange, Ginger, Turmeric) — Tangerine glow `#FF7A00`
+  - 🍓 **Flavor 02: Wild Berry Rush** (Acai, Raspberry, Blackberry) — Ruby Berry glow `#E11D48`
+  - 🥒 **Flavor 03: Emerald Detox** (Kale, Cucumber, Mint) — Forest Mint glow `#10B981`
+  - 🍍 **Flavor 04: Golden Tropics** (Pineapple, Mango, Coconut) — Golden Mango glow `#F59E0B`
+- **Flavor-Morphing Ambient Glow:** The background aura smoothly transitions to match the active bottle's color as you slide!
+- **Interactive Controls:** Next / Previous arrows, 4 thumbnail navigation buttons, and auto-play sliding with pause-on-hover.
 
-- **Disciplines:** User Interface (UI), User Experience (UX), Wireframing, Prototyping, Usability Testing, Information Architecture, User Research, Design Systems, Mobile & Web, Social Media Posts, Problem Solving, Critical Thinking, Branding
-- **Design Tools:** Figma, Adobe XD, Miro, Balsamiq
-- **AI Design Tools:** Antigravity, Bold AI, Bookipi, Design Mantic, Modern Frameworks
-- **Certifications:**
-  - 🎓 **UI/UX Designer** — NovTech, Coimbatore (Nov 2025 – Dec 2025)
-  - ⚙️ **DevOps Foundation** — Greens Technology (Aug 2024 – Oct 2024)
+### 4. 🤖 Next-Gen AI Design Tools
+- Antigravity, Bold AI, Bookipi, Design Mantic, and Modern Component Frameworks.
 
----
-
-## 🚀 How to Deploy to GitHub Pages (Cloud Hosting)
-
-### 1. Push Code to Your GitHub Repository:
-```bash
-git add .
-git commit -m "✨ Upgrade: Sharmila P UI/UX Designer Portfolio - Whitish Luxe Edition"
-git push -u origin master
-```
-
-> **Note on Permissions:** If pushing to `lillycrm601-droid/Sharmila-portfolio.git` returns `403 Permission Denied`, make sure you are logged in to the matching GitHub account:
-> ```bash
-> # Option A: Authenticate GitHub CLI
-> gh auth login
->
-> # Option B: Or use your GitHub Personal Access Token (PAT)
-> git remote set-url origin https://<YOUR_GITHUB_TOKEN>@github.com/lillycrm601-droid/Sharmila-portfolio.git
-> git push -u origin master
-> ```
-
-### 2. Enable Free GitHub Pages Cloud Hosting:
-1. Go to your repository: [https://github.com/lillycrm601-droid/Sharmila-portfolio](https://github.com/lillycrm601-droid/Sharmila-portfolio)
-2. Click **Settings** ⚙️ > **Pages** (on the left sidebar).
-3. Under **Build and deployment > Branch**, select **`master`** (or `main`) and root folder **`/ (root)`**.
-4. Click **Save**.
-5. Within 60 seconds, your portfolio will be live at:
-   👉 **`https://lillycrm601-droid.github.io/Sharmila-portfolio/`**
+### 5. 🎓 Formal Certifications & Skills
+- **UI/UX Designer** — NovTech, Coimbatore (Nov 2025 – Dec 2025)
+- **DevOps Foundation** — Greens Technology (Aug 2024 – Oct 2024)
+- Interactive animated skill progress bars and tool badges.
 
 ---
 
@@ -92,4 +61,4 @@ git push -u origin master
 
 ---
 
-*Crafted with 💜 & precision for Sharmila P.*
+*Designed & crafted with precision for Sharmila P.*

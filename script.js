@@ -1,120 +1,25 @@
 /* ========================================================
-   SHARMILA P — UI/UX DESIGNER LUXURY PORTFOLIO
-   Interactive Engine & Dynamic Animations
+   SHARMILA P — SENIOR UI/UX DESIGNER PORTFOLIO
+   Interactive Engine: Motion, Slider & Case Studies
    ======================================================== */
 
-// ==================== 1. PROJECT CASE STUDY DATABASE ====================
-const projectDatabase = {
-    'modal-p1': {
-        title: 'Mobile App Interactive Prototype',
-        category: 'Interactive Prototype • Mobile UX',
-        image: 'images/project-prototype-showcase.jpg',
-        tagline: 'High-fidelity mobile application prototype engineered with end-to-end user flows and gesture micro-interactions.',
-        role: 'Lead UI/UX Designer & Prototyper',
-        tools: 'Figma, Miro, Interactive Smart Animate',
-        problem: 'Traditional mobile mockups frequently fail to convey real-world tactile feeling, leading to misinterpretations between stakeholders, developers, and target users during user testing.',
-        solution: 'Built a 60 FPS clickable prototype in Figma featuring physics-based easing curves, drag gestures, bottom-sheet interactions, and complete onboarding-to-action flows.',
-        highlights: [
-            'End-to-end user navigation with frictionless screen transitions',
-            'Component variants with interactive smart animate states (hover, pressed, dragging)',
-            'Optimized for mobile viewport scaling with zero input latency',
-            'Full accessibility compliance with high-contrast UI touch targets (48x48dp minimum)'
-        ],
-        figmaLink: 'https://www.figma.com/proto/nwDnou5TTl1gcGtTa3x5sc/Untitled?node-id=1-2&t=GNsBj65nKpBicAgL-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2',
-        ctaText: 'Run Live Prototype'
-    },
-    'modal-p2': {
-        title: 'DigiSub — Smart Subscription Manager',
-        category: 'Mobile App • Fintech & SaaS',
-        image: 'images/project-digisub-showcase.jpg',
-        tagline: 'Community-driven fintech application designed to track recurring billing, prevent unwanted auto-renewals, and optimize household budgets.',
-        role: 'End-to-End Product Designer',
-        tools: 'Figma, Information Architecture, Data Visualization',
-        problem: 'Consumers subscribe to dozens of cloud, entertainment, and work services, inadvertently losing hundreds of dollars annually to forgotten renewals and split payment confusions.',
-        solution: 'Architected DigiSub with a clean dashboard highlighting upcoming renewal schedules, spending analytics by category, and an intuitive one-tap cancellation reminder assistant.',
-        highlights: [
-            'Financial telemetry dashboard with customizable monthly/annual spending charts',
-            'Shared family plan splitting with transparent per-person payment indicators',
-            'Automated push alert notification cards 3 days prior to renewal dates',
-            'Robust design system featuring tokenized colors and atomic components'
-        ],
-        figmaLink: 'https://www.figma.com/design/pCz9zJgmnKzZsLyNERSXZO/Subscription-Management-App--Community-?node-id=1136-316&t=Tf35fL1O9sKqHbIK-1',
-        ctaText: 'Explore in Figma'
-    },
-    'modal-p3': {
-        title: 'LuxeGlow — Beauty & Cosmetics E-Commerce Experience',
-        category: 'Responsive Web Design • Luxury E-Commerce',
-        image: 'images/project-cosmetics-showcase.jpg',
-        tagline: 'A modern skincare and cosmetic digital flagship store engineered with editorial aesthetics, transparent ingredient cards, and frictionless checkout.',
-        role: 'UI Designer & Web UX Architect',
-        tools: 'Figma, Design Systems, Responsive Breakpoint Grids',
-        problem: 'Beauty shoppers face overwhelming product clutter online, low confidence in skin-type compatibility, and cumbersome multi-step checkout processes.',
-        solution: 'Crafted an airy, editorial website aesthetic with personalized skin-quiz onboarding, rich sensory product cards, and a streamlined 2-step expressive checkout flow.',
-        highlights: [
-            'High-converting product detail pages with verified ingredient badges and skin suitability filters',
-            'Editorial visual hierarchy inspired by luxury beauty magazines',
-            'Modular responsive layout scaling seamlessly from 375px mobile to 1440px desktop screens',
-            'Conversion-focused sticky cart drawer and one-click express payment options'
-        ],
-        figmaLink: 'https://www.figma.com/design/AoTzbHNLpQ8I5fMZZRMYOZ/beauty-cosmetic-website-1?node-id=2-2&t=NcWihcLbWpbYNZH9-1',
-        ctaText: 'Explore in Figma'
-    },
-    'modal-p4': {
-        title: 'TuneHub — Next-Gen Music Streaming Platform',
-        category: 'Mobile App • Audio UX & Entertainment',
-        image: 'images/project-tunehub-showcase.jpg',
-        tagline: 'A high-energy music streaming application designed for seamless playback control, algorithmic song discovery, and social playlist collaboration.',
-        role: 'Mobile UI/UX Designer',
-        tools: 'Figma, Dark UI Elevation, Micro-Interactions',
-        problem: 'Users frequently struggle with clumsy playlist reorganizing and cluttered player interfaces while multitasking or commuting.',
-        solution: 'Developed TuneHub featuring gesture-centric player controls, dynamic background gradient adaptivity based on album art, and rapid queue manipulation.',
-        highlights: [
-            'Immersive full-screen playback mode with ambient album aura glow',
-            'Swipe-to-queue and drag-and-drop playlist reordering micro-interactions',
-            'Smart listening modes tailored to focus, workouts, and ambient relaxation',
-            'Accessible dark mode interface engineered for prolonged nighttime enjoyment'
-        ],
-        figmaLink: 'https://www.figma.com/design/FfnT3R0FDdV5TNoFNKjQrN/Untitled?node-id=0-1&t=NcWihcLbWpbYNZH9-1',
-        ctaText: 'Explore in Figma'
-    },
-    'modal-p5': {
-        title: 'Visual Identity & Editorial Poster Series',
-        category: 'Branding • Social Media Campaign & Posters',
-        image: 'images/project-poster-showcase.jpg',
-        tagline: 'High-impact creative graphics series featuring the Gandhi Jayanti national commemorative tribute poster and the Life Abroad social media campaign.',
-        role: 'Visual Designer & Creative Strategist',
-        tools: 'Adobe Photoshop, Adobe Illustrator, Figma, Behance',
-        problem: 'Digital social media channels suffer from visual fatigue, requiring brands to project striking visual narratives with immediate emotional resonance within seconds.',
-        solution: 'Engineered a series of bold typographic compositions, dramatic spatial balances, and culturally resonant color palettes across print and digital media formats.',
-        highlights: [
-            'Gandhi Jayanti Commemorative Poster celebrating national peace, dignity, and heritage with modern minimalism',
-            "'Life Abroad' social media series communicating aspirations, travel culture, and global lifestyle perspectives",
-            'Precise typographic scale, contrast ratios, and cross-platform export fidelity',
-            'Showcased on Behance with detailed visual design breakdowns'
-        ],
-        figmaLink: 'https://www.behance.net/sharmisharmila5',
-        ctaText: 'View Behance Showcase'
-    }
-};
-
-// ==================== 2. PAGE PRELOADER ====================
+// ==================== 1. PRELOADER ====================
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     setTimeout(() => {
         if (loader) {
             loader.classList.add('loaded');
         }
-        initScrollAnimations();
-    }, 1400);
+        initScrollReveals();
+    }, 1100);
 });
 
-// ==================== 3. THEME MANAGEMENT (LIGHT LUXE / DARK MIDNIGHT) ====================
+// ==================== 2. THEME CONTROLLER ====================
 const themeToggle = document.getElementById('themeToggle');
-const htmlEl = document.documentElement;
-
-// Initialize theme from localStorage or default to light (whitish)
+const htmlRoot = document.documentElement;
 const savedTheme = localStorage.getItem('sharmila_portfolio_theme') || 'light';
-htmlEl.setAttribute('data-theme', savedTheme);
+
+htmlRoot.setAttribute('data-theme', savedTheme);
 if (savedTheme === 'dark') {
     document.body.classList.remove('light-mode');
     document.body.classList.add('dark-mode');
@@ -125,27 +30,65 @@ if (savedTheme === 'dark') {
 
 if (themeToggle) {
     themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlEl.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        htmlEl.setAttribute('data-theme', newTheme);
-        localStorage.setItem('sharmila_portfolio_theme', newTheme);
+        const current = htmlRoot.getAttribute('data-theme');
+        const next = current === 'light' ? 'dark' : 'light';
+        htmlRoot.setAttribute('data-theme', next);
+        localStorage.setItem('sharmila_portfolio_theme', next);
 
-        if (newTheme === 'dark') {
+        if (next === 'dark') {
             document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
         } else {
             document.body.classList.remove('dark-mode');
             document.body.classList.add('light-mode');
         }
-
-        // Trigger particle color update if canvas exists
-        if (window.updateParticleColors) {
-            window.updateParticleColors(newTheme);
-        }
     });
 }
 
-// ==================== 4. CUSTOM CURSOR ====================
+// ==================== 3. TYPING HEADLINE EFFECT ====================
+const typingTextEl = document.getElementById('typingText');
+if (typingTextEl) {
+    const roles = [
+        'UI/UX Designer',
+        'Mobile App Architect',
+        'Design Systems Specialist',
+        'Interactive Prototyper',
+        'AI-Augmented Product Designer'
+    ];
+
+    let roleIdx = 0;
+    let charIdx = 0;
+    let isDeleting = false;
+    let speed = 90;
+
+    function runTyping() {
+        const text = roles[roleIdx];
+
+        if (isDeleting) {
+            typingTextEl.textContent = text.substring(0, charIdx - 1);
+            charIdx--;
+            speed = 40;
+        } else {
+            typingTextEl.textContent = text.substring(0, charIdx + 1);
+            charIdx++;
+            speed = 90;
+        }
+
+        if (!isDeleting && charIdx === text.length) {
+            speed = 2200; // pause at end
+            isDeleting = true;
+        } else if (isDeleting && charIdx === 0) {
+            isDeleting = false;
+            roleIdx = (roleIdx + 1) % roles.length;
+            speed = 450;
+        }
+
+        setTimeout(runTyping, speed);
+    }
+    setTimeout(runTyping, 1200);
+}
+
+// ==================== 4. CUSTOM MAGNETIC CURSOR ====================
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorRing = document.querySelector('.cursor-ring');
 
@@ -171,382 +114,268 @@ if (cursorDot && cursorRing && window.innerWidth > 992) {
     }
     renderCursor();
 
-    const interactiveSelectors = 'a, button, .project-card, .tool-tile, .pillar-card, .ai-tool-card, .cert-card-luxe, input, textarea, select';
-    document.querySelectorAll(interactiveSelectors).forEach((el) => {
+    const hoverTargets = 'a, button, .jump-pill, .cs-tab-btn, .thumb-nav-btn, .ai-feature-card, .luxe-cert-card, .tool-badge, input, textarea, select';
+    document.querySelectorAll(hoverTargets).forEach((el) => {
         el.addEventListener('mouseenter', () => cursorRing.classList.add('hover'));
         el.addEventListener('mouseleave', () => cursorRing.classList.remove('hover'));
     });
 }
 
-// ==================== 5. INTERACTIVE PARTICLE CANVAS ====================
-const canvas = document.getElementById('particleCanvas');
+// ==================== 5. AMBIENT PARTICLE CANVAS ====================
+const canvas = document.getElementById('ambientCanvas');
 if (canvas) {
     const ctx = canvas.getContext('2d');
     let particles = [];
-    let animationFrameId;
+    let animId;
 
-    function resizeCanvas() {
+    function resize() {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
     }
-    resizeCanvas();
+    resize();
 
     class Particle {
         constructor() {
             this.reset();
         }
-
         reset() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 2.2 + 0.8;
-            this.speedX = (Math.random() - 0.5) * 0.45;
-            this.speedY = (Math.random() - 0.5) * 0.45;
-            this.opacity = Math.random() * 0.45 + 0.12;
-            const isDark = htmlEl.getAttribute('data-theme') === 'dark';
-            this.color = Math.random() > 0.5 
-                ? (isDark ? '139, 92, 246' : '99, 102, 241') 
-                : (isDark ? '236, 72, 153' : '244, 63, 94');
+            this.size = Math.random() * 2 + 0.8;
+            this.vx = (Math.random() - 0.5) * 0.4;
+            this.vy = (Math.random() - 0.5) * 0.4;
+            this.alpha = Math.random() * 0.35 + 0.1;
         }
-
         update() {
-            this.x += this.speedX;
-            this.y += this.speedY;
-
-            if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-            if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+            this.x += this.vx;
+            this.y += this.vy;
+            if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+            if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
         }
-
         draw() {
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-            ctx.fillStyle = `rgba(${this.color}, ${this.opacity})`;
+            ctx.fillStyle = `rgba(99, 102, 241, ${this.alpha})`;
             ctx.fill();
         }
     }
 
-    function initParticles() {
+    function init() {
         particles = [];
-        const count = Math.min(65, Math.floor((canvas.width * canvas.height) / 18000));
+        const count = Math.min(50, Math.floor((canvas.width * canvas.height) / 20000));
         for (let i = 0; i < count; i++) {
             particles.push(new Particle());
         }
     }
 
-    window.updateParticleColors = function() {
-        particles.forEach(p => p.reset());
-    };
-
-    function drawConnections() {
-        const isDark = htmlEl.getAttribute('data-theme') === 'dark';
-        const lineBase = isDark ? '139, 92, 246' : '99, 102, 241';
-
-        for (let i = 0; i < particles.length; i++) {
-            for (let j = i + 1; j < particles.length; j++) {
-                const dx = particles[i].x - particles[j].x;
-                const dy = particles[i].y - particles[j].y;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-
-                if (dist < 130) {
-                    const alpha = (1 - dist / 130) * 0.12;
-                    ctx.beginPath();
-                    ctx.moveTo(particles[i].x, particles[i].y);
-                    ctx.lineTo(particles[j].x, particles[j].y);
-                    ctx.strokeStyle = `rgba(${lineBase}, ${alpha})`;
-                    ctx.lineWidth = 0.6;
-                    ctx.stroke();
-                }
-            }
-        }
-    }
-
-    function animateParticles() {
+    function loop() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         particles.forEach(p => {
             p.update();
             p.draw();
         });
-        drawConnections();
-        animationFrameId = requestAnimationFrame(animateParticles);
+        animId = requestAnimationFrame(loop);
     }
 
-    initParticles();
-    animateParticles();
+    init();
+    loop();
 
     window.addEventListener('resize', () => {
-        cancelAnimationFrame(animationFrameId);
-        resizeCanvas();
-        initParticles();
-        animateParticles();
+        cancelAnimationFrame(animId);
+        resize();
+        init();
+        loop();
     });
 }
 
-// ==================== 6. TYPING EFFECT ====================
-const typedTextEl = document.getElementById('typedText');
-if (typedTextEl) {
-    const roles = [
-        'UI/UX Designer',
-        'Mobile App Architect',
-        'Web & SaaS Product Designer',
-        'Interactive Prototyper',
-        'AI-Enhanced Workflow Specialist'
-    ];
+// ==================== 6. CAR DETAILING WEBSITE INTERACTIVE SCROLL ====================
+const carViewport = document.getElementById('carViewport');
+const carScrollToggle = document.getElementById('carScrollToggle');
+const carScrollIcon = document.getElementById('carScrollIcon');
+const carScrollLabel = document.getElementById('carScrollLabel');
+const carFullscreenBtn = document.getElementById('carFullscreenBtn');
+const carLightboxModal = document.getElementById('carLightboxModal');
+const carLightboxClose = document.getElementById('carLightboxClose');
+const carLightboxBackdrop = document.getElementById('carLightboxBackdrop');
 
-    let roleIdx = 0;
-    let charIdx = 0;
-    let isDeleting = false;
-    let typeDelay = 90;
+let isCarAutoScrolling = false;
+let carScrollInterval = null;
 
-    function handleTyping() {
-        const currentRole = roles[roleIdx];
+if (carScrollToggle && carViewport) {
+    carScrollToggle.addEventListener('click', () => {
+        isCarAutoScrolling = !isCarAutoScrolling;
 
-        if (isDeleting) {
-            typedTextEl.textContent = currentRole.substring(0, charIdx - 1);
-            charIdx--;
-            typeDelay = 40;
+        if (isCarAutoScrolling) {
+            carScrollIcon.className = 'fas fa-pause';
+            carScrollLabel.textContent = 'Pause';
+
+            carScrollInterval = setInterval(() => {
+                const maxScroll = carViewport.scrollHeight - carViewport.clientHeight;
+                if (carViewport.scrollTop >= maxScroll - 5) {
+                    carViewport.scrollTop = 0; // loop back to top
+                } else {
+                    carViewport.scrollTop += 2;
+                }
+            }, 30);
         } else {
-            typedTextEl.textContent = currentRole.substring(0, charIdx + 1);
-            charIdx++;
-            typeDelay = 90;
-        }
-
-        if (!isDeleting && charIdx === currentRole.length) {
-            typeDelay = 2200; // Pause at completion
-            isDeleting = true;
-        } else if (isDeleting && charIdx === 0) {
-            isDeleting = false;
-            roleIdx = (roleIdx + 1) % roles.length;
-            typeDelay = 500;
-        }
-
-        setTimeout(handleTyping, typeDelay);
-    }
-
-    setTimeout(handleTyping, 1600);
-}
-
-// ==================== 7. NAVBAR & SCROLL SPY ====================
-const navbar = document.getElementById('navbar');
-const navToggle = document.getElementById('navToggle');
-const mobileMenu = document.getElementById('mobileMenu');
-const navLinks = document.querySelectorAll('.nav-link');
-const mobileLinks = document.querySelectorAll('.mobile-link');
-const sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-
-    // Scroll spy
-    let currentSectionId = '';
-    sections.forEach(section => {
-        const top = section.offsetTop - 120;
-        if (window.scrollY >= top) {
-            currentSectionId = section.getAttribute('id');
+            carScrollIcon.className = 'fas fa-play';
+            carScrollLabel.textContent = 'Auto Scroll';
+            clearInterval(carScrollInterval);
         }
     });
 
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${currentSectionId}`) {
-            link.classList.add('active');
+    // Pause auto-scroll when user manually scrolls
+    carViewport.addEventListener('mouseenter', () => {
+        if (isCarAutoScrolling) clearInterval(carScrollInterval);
+    });
+
+    carViewport.addEventListener('mouseleave', () => {
+        if (isCarAutoScrolling) {
+            carScrollInterval = setInterval(() => {
+                const maxScroll = carViewport.scrollHeight - carViewport.clientHeight;
+                if (carViewport.scrollTop >= maxScroll - 5) {
+                    carViewport.scrollTop = 0;
+                } else {
+                    carViewport.scrollTop += 2;
+                }
+            }, 30);
         }
     });
-});
-
-if (navToggle && mobileMenu) {
-    navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-    });
-
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            mobileMenu.classList.remove('active');
-        });
-    });
 }
 
-// ==================== 8. SCROLL REVEAL & COUNTER ANIMATIONS ====================
-function initScrollAnimations() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-
-                // Animate skill bars
-                const meters = entry.target.querySelectorAll('.meter-fill');
-                meters.forEach(meter => {
-                    const width = meter.getAttribute('data-width');
-                    setTimeout(() => {
-                        meter.style.width = `${width}%`;
-                    }, 200);
-                });
-
-                // Animate counters
-                const counters = entry.target.querySelectorAll('.stat-number');
-                counters.forEach(counter => {
-                    animateNumber(counter);
-                });
-            }
-        });
-    }, {
-        threshold: 0.12,
-        rootMargin: '0px 0px -40px 0px'
+// Fullscreen Lightbox for Car Detailing
+if (carFullscreenBtn && carLightboxModal) {
+    carFullscreenBtn.addEventListener('click', () => {
+        carLightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
     });
 
-    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
-}
-
-function animateNumber(counter) {
-    const target = parseInt(counter.getAttribute('data-target'), 10);
-    const duration = 1800;
-    const startTime = performance.now();
-
-    function update(time) {
-        const elapsed = time - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const easeOut = 1 - Math.pow(1 - progress, 3);
-        const val = Math.floor(target * easeOut);
-
-        counter.textContent = val;
-
-        if (progress < 1) {
-            requestAnimationFrame(update);
-        } else {
-            counter.textContent = target;
-        }
-    }
-    requestAnimationFrame(update);
-}
-
-// ==================== 9. PROJECT FILTERING ====================
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-
-filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-
-        const filter = btn.getAttribute('data-filter');
-
-        projectCards.forEach((card, index) => {
-            const categories = card.getAttribute('data-category').split(' ');
-
-            if (filter === 'all' || categories.includes(filter)) {
-                card.classList.remove('hidden');
-                card.style.animation = `fadeInUp 0.4s ease ${index * 0.08}s forwards`;
-            } else {
-                card.classList.add('hidden');
-            }
-        });
-    });
-});
-
-// ==================== 10. CASE STUDY MODAL ENGINE ====================
-const caseStudyModal = document.getElementById('caseStudyModal');
-const modalContent = document.getElementById('modalContent');
-const modalCloseBtn = document.getElementById('modalCloseBtn');
-const modalBackdrop = document.getElementById('modalBackdrop');
-
-function openCaseStudyModal(modalKey) {
-    const data = projectDatabase[modalKey];
-    if (!data) return;
-
-    modalContent.innerHTML = `
-        <div class="modal-header-hero">
-            <span class="modal-category-badge">${data.category}</span>
-            <h2 class="modal-title">${data.title}</h2>
-            <p class="modal-tagline">${data.tagline}</p>
-            <div class="modal-media-frame">
-                <img src="${data.image}" alt="${data.title}">
-            </div>
-        </div>
-
-        <div class="modal-section-block">
-            <h4><i class="fas fa-bullseye"></i> Problem Statement</h4>
-            <p>${data.problem}</p>
-        </div>
-
-        <div class="modal-section-block">
-            <h4><i class="fas fa-lightbulb"></i> UX Solution & Methodology</h4>
-            <p>${data.solution}</p>
-        </div>
-
-        <div class="modal-section-block">
-            <h4><i class="fas fa-sparkles"></i> Key Highlights & Features</h4>
-            <ul class="modal-highlights-list">
-                ${data.highlights.map(item => `<li><i class="fas fa-check-circle"></i> <span>${item}</span></li>`).join('')}
-            </ul>
-        </div>
-
-        <div class="modal-section-block">
-            <h4><i class="fas fa-screwdriver-wrench"></i> Role & Tools</h4>
-            <p><strong>Role:</strong> ${data.role} &nbsp;|&nbsp; <strong>Tools:</strong> ${data.tools}</p>
-        </div>
-
-        <div class="modal-action-row">
-            <a href="${data.figmaLink}" target="_blank" class="btn btn-primary">
-                <span>${data.ctaText}</span>
-                <i class="fas fa-arrow-up-right-from-square"></i>
-            </a>
-            <button class="btn btn-secondary modal-close-action">
-                <span>Close Case Study</span>
-            </button>
-        </div>
-    `;
-
-    caseStudyModal.classList.add('active');
-    document.body.style.overflow = 'hidden';
-
-    // Hook internal close button
-    const closeAction = modalContent.querySelector('.modal-close-action');
-    if (closeAction) {
-        closeAction.addEventListener('click', closeCaseStudyModal);
-    }
-}
-
-function closeCaseStudyModal() {
-    if (caseStudyModal) {
-        caseStudyModal.classList.remove('active');
+    function closeLightbox() {
+        carLightboxModal.classList.remove('active');
         document.body.style.overflow = '';
     }
+
+    if (carLightboxClose) carLightboxClose.addEventListener('click', closeLightbox);
+    if (carLightboxBackdrop) carLightboxBackdrop.addEventListener('click', closeLightbox);
+
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && carLightboxModal.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
 }
 
-// Attach listeners to all detail buttons
-document.querySelectorAll('.view-details-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const modalKey = btn.getAttribute('data-modal');
-        openCaseStudyModal(modalKey);
+// ==================== 7. DIGISUB CASE STUDY TABS ====================
+const csTabBtns = document.querySelectorAll('.cs-tab-btn');
+const csTabPanels = document.querySelectorAll('.cs-tab-panel');
+
+csTabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        csTabBtns.forEach(b => b.classList.remove('active'));
+        csTabPanels.forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-tab');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+            targetPanel.classList.add('active');
+        }
     });
 });
 
-if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCaseStudyModal);
-if (modalBackdrop) modalBackdrop.addEventListener('click', closeCaseStudyModal);
+// ==================== 8. JUICE 4-BOTTLE SLIDING SHOWCASE ====================
+const juiceSlides = document.querySelectorAll('.juice-slide');
+const juiceThumbBtns = document.querySelectorAll('.thumb-nav-btn');
+const juicePrevBtn = document.getElementById('juicePrev');
+const juiceNextBtn = document.getElementById('juiceNext');
+const sliderAura = document.getElementById('sliderAura');
 
-window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && caseStudyModal && caseStudyModal.classList.contains('active')) {
-        closeCaseStudyModal();
-    }
+let currentSlideIdx = 0;
+const totalSlides = juiceSlides.length;
+let autoSlideTimer = null;
+
+function setJuiceSlide(index) {
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+
+    currentSlideIdx = index;
+
+    // Update slides visibility
+    juiceSlides.forEach((slide, i) => {
+        if (i === currentSlideIdx) {
+            slide.classList.add('active');
+            // update ambient glow to match flavor color
+            const glowColor = slide.getAttribute('data-theme-glow');
+            if (sliderAura && glowColor) {
+                sliderAura.style.background = glowColor;
+            }
+        } else {
+            slide.classList.remove('active');
+        }
+    });
+
+    // Update thumbnail buttons
+    juiceThumbBtns.forEach((btn, i) => {
+        if (i === currentSlideIdx) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+if (juicePrevBtn) {
+    juicePrevBtn.addEventListener('click', () => {
+        setJuiceSlide(currentSlideIdx - 1);
+        resetAutoSlide();
+    });
+}
+
+if (juiceNextBtn) {
+    juiceNextBtn.addEventListener('click', () => {
+        setJuiceSlide(currentSlideIdx + 1);
+        resetAutoSlide();
+    });
+}
+
+juiceThumbBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const target = parseInt(btn.getAttribute('data-slide-target'), 10);
+        setJuiceSlide(target);
+        resetAutoSlide();
+    });
 });
 
-// ==================== 11. TOAST NOTIFICATIONS & COPY EMAIL ====================
-const toastNotification = document.getElementById('toastNotification');
-const toastMessage = document.getElementById('toastMessage');
+// Automatic slide rotation every 4.5 seconds
+function startAutoSlide() {
+    autoSlideTimer = setInterval(() => {
+        setJuiceSlide(currentSlideIdx + 1);
+    }, 4500);
+}
 
-function showToast(msg) {
-    if (!toastNotification) return;
-    toastMessage.textContent = msg;
-    toastNotification.classList.add('show');
+function resetAutoSlide() {
+    clearInterval(autoSlideTimer);
+    startAutoSlide();
+}
+
+const sliderContainer = document.getElementById('juiceSliderContainer');
+if (sliderContainer) {
+    sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideTimer));
+    sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    startAutoSlide();
+}
+
+// ==================== 9. TOAST NOTIFICATION & COPY EMAIL ====================
+const toastBubble = document.getElementById('toastBubble');
+const toastMsg = document.getElementById('toastMsg');
+
+function showToast(message) {
+    if (!toastBubble) return;
+    toastMsg.textContent = message;
+    toastBubble.classList.add('show');
     setTimeout(() => {
-        toastNotification.classList.remove('show');
-    }, 3200);
+        toastBubble.classList.remove('show');
+    }, 3000);
 }
 
 const copyEmailBtn = document.getElementById('copyEmailBtn');
@@ -561,7 +390,7 @@ if (copyEmailBtn) {
     });
 }
 
-// ==================== 12. CONTACT FORM MAILTO DISPATCH ====================
+// ==================== 10. CONTACT FORM MAILTO ====================
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -569,79 +398,120 @@ if (contactForm) {
 
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
-        const subjectType = document.getElementById('projectType').value;
+        const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value.trim();
 
-        const emailSubject = encodeURIComponent(`[Portfolio Inquiry] ${subjectType} - from ${name}`);
-        const emailBody = encodeURIComponent(
-            `Hi Sharmila,\n\nName: ${name}\nEmail: ${email}\nInquiry Type: ${subjectType}\n\nProject Details:\n${message}\n\nBest regards,\n${name}`
+        const subjectEncoded = encodeURIComponent(`[Portfolio Inquiry] ${subject} from ${name}`);
+        const bodyEncoded = encodeURIComponent(
+            `Hi Sharmila,\n\nName: ${name}\nEmail: ${email}\nInquiry: ${subject}\n\nProject Details:\n${message}\n\nWarm regards,\n${name}`
         );
 
-        window.location.href = `mailto:sharmi936342@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+        window.location.href = `mailto:sharmi936342@gmail.com?subject=${subjectEncoded}&body=${bodyEncoded}`;
 
-        showToast('Opening email client! Thanks for reaching out, Sharmila will reply promptly.');
+        showToast('Opening your email client! Sharmila will get back to you promptly.');
 
-        const submitBtn = document.getElementById('submitBtn');
-        if (submitBtn) {
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<span>Message Dispatched!</span> <i class="fas fa-check"></i>';
+        const btn = document.getElementById('formSubmitBtn');
+        if (btn) {
+            const original = btn.innerHTML;
+            btn.innerHTML = '<span>Message Dispatched!</span> <i class="fas fa-check"></i>';
             setTimeout(() => {
-                submitBtn.innerHTML = originalText;
+                btn.innerHTML = original;
                 contactForm.reset();
             }, 3000);
         }
     });
 }
 
-// ==================== 13. BACK TO TOP BUTTON ====================
-const backToTop = document.getElementById('backToTop');
-if (backToTop) {
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 400) {
-            backToTop.classList.add('visible');
+// ==================== 11. MOBILE DRAWER NAVIGATION ====================
+const mobileToggle = document.getElementById('mobileToggle');
+const mobileDrawer = document.getElementById('mobileDrawer');
+const drawerClose = document.getElementById('drawerClose');
+const drawerLinks = document.querySelectorAll('.drawer-link');
+
+if (mobileToggle && mobileDrawer) {
+    mobileToggle.addEventListener('click', () => {
+        mobileDrawer.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    function closeDrawer() {
+        mobileDrawer.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
+    drawerLinks.forEach(link => link.addEventListener('click', closeDrawer));
+}
+
+// ==================== 12. SCROLL REVEALS & NUMBER ANIMATION ====================
+function initScrollReveals() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+
+                // Animate meter bars
+                const meters = entry.target.querySelectorAll('.meter-fill');
+                meters.forEach(meter => {
+                    const w = meter.getAttribute('data-width');
+                    setTimeout(() => {
+                        meter.style.width = `${w}%`;
+                    }, 200);
+                });
+
+                // Animate stats
+                const counters = entry.target.querySelectorAll('.stat-counter');
+                counters.forEach(counter => {
+                    animateCounter(counter);
+                });
+            }
+        });
+    }, {
+        threshold: 0.12,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+}
+
+function animateCounter(counter) {
+    const target = parseInt(counter.getAttribute('data-target'), 10);
+    const duration = 1600;
+    const startTime = performance.now();
+
+    function step(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(target * easeOut);
+
+        counter.textContent = current;
+
+        if (progress < 1) {
+            requestAnimationFrame(step);
         } else {
-            backToTop.classList.remove('visible');
-        }
-    });
-
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-}
-
-// ==================== 14. 3D CARD TILT EFFECT ====================
-if (window.innerWidth > 992) {
-    projectCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const midX = rect.width / 2;
-            const midY = rect.height / 2;
-            const rotX = ((y - midY) / midY) * -6;
-            const rotY = ((x - midX) / midX) * 6;
-
-            card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-8px)`;
-        });
-
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
-        });
-    });
-}
-
-// Inject keyframe animation for project filter transitions
-const styleSheet = document.createElement('style');
-styleSheet.textContent = `
-    @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(24px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
+            counter.textContent = target;
         }
     }
-`;
-document.head.appendChild(styleSheet);
+    requestAnimationFrame(step);
+}
+
+// ==================== 13. 3D CARD TILT ON PORTRAIT ====================
+const portraitCard = document.getElementById('portraitCard');
+if (portraitCard && window.innerWidth > 992) {
+    portraitCard.addEventListener('mousemove', (e) => {
+        const rect = portraitCard.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const midX = rect.width / 2;
+        const midY = rect.height / 2;
+        const rotX = ((y - midY) / midY) * -8;
+        const rotY = ((x - midX) / midX) * 8;
+
+        portraitCard.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+    });
+
+    portraitCard.addEventListener('mouseleave', () => {
+        portraitCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+    });
+}
